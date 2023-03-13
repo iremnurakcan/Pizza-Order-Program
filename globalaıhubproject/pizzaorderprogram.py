@@ -1,15 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Mar 13 01:14:14 2023
-
-@author: cemil
-"""
 import datetime
 import csv
 
 
 import pandas as pd
-menu = pd.read_csv("C:\\Users\\cemil\\Desktop\\globalaıhubproject\\menu.csv")
+menu = pd.read_csv("C:\\Users\\irem\\Desktop\\globalaıhubproject\\menu.csv")
 print(menu)
 
 #Reading the menu from the menu.csv file
@@ -135,12 +129,12 @@ def main():
         print(key + ". " + value["name"] + " - $" + str(value["price"]))
 
 
-    pizza_choice = input("Please choose a pizza (1-5): ")
+    pizza_choice = input("Please choose a pizza (1-4): ")
     while pizza_choice not in pizzas.keys():
-        pizza_choice = input("Invalid choice. Please choose a pizza (1-5): ")
-    sauce_choice = input("Please choose a sauce (1-4): ")
+        pizza_choice = input("Invalid choice. Please choose a pizza (1-4): ")
+    sauce_choice = input("Please choose a sauce (11-16): ")
     while sauce_choice not in sauces.keys():
-        sauce_choice = input("Invalid choice. Please choose a sauce (1-4): ")
+        sauce_choice = input("Invalid choice. Please choose a sauce (11-16): ")
 
 # Getting user input
 
